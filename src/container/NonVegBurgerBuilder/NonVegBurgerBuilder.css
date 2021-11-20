@@ -1,0 +1,27 @@
+.nonvegHeading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+
+.nonvegHeading #nonveg {
+    font-size: 2.8rem;
+    color: #c33802;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 620px) {
+    .nonvegHeading #nonveg{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .nonvegHeading #nonveg{
+        font-size: 2rem;
+    }
+}

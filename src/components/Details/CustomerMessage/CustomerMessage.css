@@ -1,0 +1,70 @@
+.Details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+}
+
+.Details .text {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.Details .text span {
+    font-size: 2.6rem;
+    color: rgb(63, 2, 2);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.Details .text p {
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'Mangal';
+    padding: 0 0 5px 0;
+}
+
+.Details .image {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.Details .image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.Details .image img:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width: 620px) {
+    .Details {
+        display: block;
+    }
+
+    .Details .text {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .Details .text span {
+        font-size: 2.4rem;
+    }
+
+    .Details .image {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .Details .text span {
+        font-size: 1.8rem;
+    }
+}

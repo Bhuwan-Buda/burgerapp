@@ -1,0 +1,217 @@
+.AboutUs {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/about_us.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.AboutUs .Topic {
+    font-size: 3.2rem;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+}
+
+.AboutUs .Info {
+    font-size: 1.4rem;
+    font-family: 'Mangal';
+    color:#00d4f3;
+    font-weight: 500;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: 0 100px;
+    overflow: hidden;
+}
+
+.Mission {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Mission .mission_span {
+    font-size: 2.8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #af310a;
+}
+
+.Mission .mission_p {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.About {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.About .about_span {
+    font-size: 2.8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #af310a;
+}
+
+.About .about_p {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.Contact_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.9);
+}
+
+.Contact_info .Address_info,.Phone_info,.Email_info {
+    height: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.Address_info p,
+.Phone_info p,
+.Email_info p{
+    font-size: 1.8rem;
+    color: #00d4f3;
+}
+
+.Address_info h3,
+.Phone_info h3,
+.Email_info h3{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.Address_info i,
+.Phone_info i,
+.Email_info i{
+    font-style: normal;
+    font-size: 1rem;  
+    color: #fff;  
+}
+
+.price_list {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.price_list #button {
+    padding: 4px 6px;
+    position: relative;
+    background-color: #fff;
+    color: #703b09;
+    border: 1px solid #703b09;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.price_list #button:hover {
+    background-color: #703b09;
+    color: #fff;
+}
+.priceList_modal {
+    width: 30%;
+    height: 260px;
+    outline: none;
+    position: relative;
+    top: 32%;
+    margin: auto;
+    z-index: 4444;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background:#703b09;
+    border-radius: 4px;
+    animation: animate 0.5s;
+}
+
+.priceList_modal p {
+    color: #fff;
+}
+@keyframes animate {
+    0%{
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50%{
+        opacity:0.5; 
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media(max-width:620px) {
+    .AboutUs .Topic {
+        font-size: 2.8rem;
+    }
+    .AboutUs .Info {
+        font-size: 1.2rem;
+    }
+    .Mission .mission_span {
+        font-size: 2.4rem;
+    }
+    .Mission .mission_p {
+        font-size: 1rem;
+    }
+    .About {
+        width: 80%;
+    }
+    .About .about_span {
+        font-size: 2.4rem;
+    }
+    .About .about_p {
+        font-size: 1rem;
+    }
+    .Contact_info{
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px) {
+    .AboutUs .Topic {
+        font-size: 2.4rem;
+    }
+    .AboutUs .Info {
+        font-size: 1.2rem;
+    }
+    .Mission .mission_span {
+        font-size: 2.2rem;
+    }
+    .Mission .mission_p {
+        font-size: 1rem;
+    }
+    .About {
+        width: 90%;
+    }
+    .About .about_span {
+        font-size: 2.2rem;
+    }
+    .About .about_p {
+        font-size: 1rem;
+    }
+    .priceList_modal{
+        width: 50%;
+    }
+}

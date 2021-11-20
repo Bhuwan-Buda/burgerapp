@@ -1,0 +1,41 @@
+.CheckOutNon {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.CheckOutNon #h4n {
+    font-size: 2.4rem;
+    color: #c33a02;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+.CheckOutNon .BurgerHere{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.CheckOutNon .confirm{
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media(max-width:620px) {
+    .CheckOutNon h4 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:500px) {
+    .CheckOutNon {
+        position: relative;
+        top: 20px;
+    }
+    .CheckOutNon h4 {
+        font-size: 1.4rem;
+    }
+}

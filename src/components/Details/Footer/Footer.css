@@ -1,0 +1,287 @@
+.Footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 0 20px 0;
+}
+
+.Site_Title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Site_Title .hr_1,
+.Site_Title .hr_2,
+.Site_Title .Title {
+    margin:0 20px;
+}
+
+.Site_Title .hr_1 {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(63, 2, 2);
+}
+
+.Site_Title .Title {
+    font-size: 2.6rem;
+    color: rgb(63, 2, 2);
+    cursor: default;
+    font-weight: bold;
+    position: relative;
+}
+
+.Site_Title .hr_2 {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(63, 2, 2);
+}
+
+.social_medias {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.social_medias a{
+    text-decoration: none;
+}
+
+.social_medias a i {
+    font-size: 2.4rem;
+    color: rgb(63, 2, 2);
+    margin: 0 20px;
+    transition: all color;
+}
+
+.social_medias a i:hover {
+    transition: 0.5s;
+    color: rgb(95, 9, 3);
+}
+
+.vr_1 {
+    width: 1px;
+    height: 100px;
+    background-color: rgb(63, 2, 2);
+    position: relative;
+    margin: auto;
+}
+
+.subscribe {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe #text,
+.subscribe #button {
+    border: 1px solid rgb(63, 2, 2);
+}
+
+.subscribe #text {
+    width: 164px;
+    height: 26px;
+}
+
+.subscribe #text:focus {
+    outline: none;
+}
+
+#text::placeholder {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color:black;
+}
+
+.subscribe #button {
+    width: 170px;
+    height: 28px;
+    font-size: 0.7rem;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(63,2,2) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.subscribe #button:focus {
+    outline: none;
+}
+
+.subscribe #button:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.Links {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.Links a {
+    text-decoration: none;
+}
+
+.Links a:hover {
+    text-decoration: none;
+}
+
+.Links a i {
+    font-size: 1rem;
+    color: rgb(63, 2, 2);
+    font-family: sans-serif;
+    font-style: normal;
+    margin: 0 20px;
+    word-spacing: normal;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    transition: 0s color;
+}
+
+.Links a i:hover {
+    transition: 0.5s;
+    color: rgb(95, 9, 3);
+}
+
+.hr_3 {
+    width: 500px;
+    height: 1px;
+    background-color: rgb(63, 2, 2);
+    position: relative;
+    margin: auto;
+}
+
+#Copyright {
+    font-size: 1rem;
+    color: rgb(63, 2, 2);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.subscribeModal {
+    width: 180px;
+    height: 120px;
+    outline: none;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    z-index: 4444;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    background: rgb(63, 2, 2);
+    border-radius: 6px;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50%{
+        opacity:0.5; 
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.subscribeModal p {
+    font-size: 1.4rem;
+    color: #fff;   
+}
+
+.subscribeModal button {
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #40a4c8;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: #40a4c8;
+}
+
+@media (max-width: 620px) {
+    .Site_Title .Title{
+        font-size: 2.2rem;
+    }
+    .Site_Title .hr_1{
+        width: 280px;
+    }
+    .Site_Title .hr_2 {
+        width: 280px;
+    }
+    .social_medias a i {
+        font-size: 2rem;
+    }
+    .Links{
+        display: none;
+    }
+    .vr_1 {
+        height: 70px;
+    }
+    .subscribeModal {
+        left: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Site_Title .Title{
+        font-size: 2rem;
+    }
+    .Site_Title .hr_1{
+        width: 220px;
+    }
+    .Site_Title .hr_2 {
+        width: 220px;
+    }
+    .social_medias a i {
+        font-size: 1.8rem;
+    }
+    .Links{
+        display: none;
+    }
+    .hr_3 {
+        width: 380px;
+    }
+    .vr_1 {
+        height: 60px;
+    }
+    .subscribesubscribeModal {
+        left: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    .hr_3 {
+        width: 280px;
+    }
+    .vr_1 {
+        height: 50px;
+    }
+    .Links{
+        display: none;
+    }
+}
+
+@media(max-width:350px) {
+    .subscribeModal {
+        left: 18%;
+    }
+}

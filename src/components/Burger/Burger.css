@@ -1,0 +1,44 @@
+.vegBurger {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    overflow: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.message {
+    font-size: 1.2rem;
+    color: #47b812;
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .vegBurger {
+        width: 700px;
+        height: 600px;
+    }
+} 
+
+@media (min-width: 500px) and (min-height: 401px) {
+    .vegBurger {
+        width: 450px;
+        height: 400px;
+    }
+} 
+
+@media (max-width: 500px) and (min-height: 400px) {
+    .vegBurger {
+        width: 380px;
+        height: 320px;
+    }
+    .message {
+        font-size: 1.0rem;
+    }
+} 
+
+@media (max-width: 400px) {
+    .vegBurger {
+        width: 300px;
+        height: 280px;
+    }
+}

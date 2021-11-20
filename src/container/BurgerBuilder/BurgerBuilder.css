@@ -1,0 +1,26 @@
+.vegHeading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.vegHeading h1 {
+    font-size: 2.8rem;
+    color: #47b812;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 620px) {
+    .vegHeading h1{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .vegHeading h1{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,123 @@
+.ContactFormNon {
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    font-family: sans-serif;
+}    
+
+.ContactFormNon h3 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(63,2,2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.ContactFormNon .form-division {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ContactFormNon .form-division #name,#email,#number,#address, #zip-code {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border-width: 0 0 1px 0;
+    border-color: #32a8ff;
+    padding: 4px 0px;
+    outline: none;
+    color: #fff;
+}
+
+.ContactFormNon .form-division input::placeholder {
+    color: #32a8ff;
+    font-size: 0.9rem;
+}
+
+.ContactFormNon .form-division #nonSubmit {
+    outline: none;
+    display: block;
+    border: 2px solid #32a8ff;
+    background-color: #32a8ff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    width: 80%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.ContactFormNon .form-division #nonSubmit:hover {
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    color: #32a8ff;
+}
+.nonModal {
+    width: 18%;
+    height: 120px;
+    outline: none;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    background:#c33a02;
+    border-radius: 6px;
+    animation: animate 0.5s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50%{
+        opacity:0.5; 
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.nonModal p {
+    font-size: 1.4rem;
+    color: #fff;   
+}
+
+.nonModal button {
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #40a4c8;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: #40a4c8;
+}
+
+@media (max-width:620px) {
+    .ContactFormNon h3{
+        font-size: 1.6rem;
+    }
+    .nonModal {
+        width: 22%;
+    }
+}
+@media(max-width:500px) {
+    .nonModal {
+        width: 28%;
+    }
+}    
+
+@media(max-width:350px) {
+    .nonModal {
+        width: 34%;
+    }
+}
